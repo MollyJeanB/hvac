@@ -7,9 +7,27 @@
     <link rel="stylesheet" type="text/css" href="main.css">
   </head>
   <body>
+    <header>
+      <h1 class="header-text">HVAC Usage Report</h1>
+    </header>
+    <div class="page-content">
+      <div class="tab-bar">
+        <button class="tablinks" onclick="openMonth(event, 'April')">April</button>
+        <button class="tablinks" onclick="openMonth(event, 'May')">May</button>
+      </div>
+      <div id="April" class="tabcontent">
+        <h3>April 2018</h3>
+        <div class="chart-contain" id="april-contain"></div>
+      </div>
+      <div id="May" class="tabcontent hidestart">
+        <h3>May 2018</h3>
+        <div class="chart-contain" id="may-contain"></div>
+      </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
